@@ -9,8 +9,18 @@
 ## Overview
 I've created a simple 🎈[Streamlit](https://streamlit.io/) app using [DeepInfra's inference API](https://deepinfra.com/docs/advanced/openai_api) to showcase the CodeLlama model that [Meta launched last Thursday](https://about.fb.com/news/2023/08/code-llama-ai-for-coding/).
 
+## CodeLlama in a nutshell
+- **Specialized for Programming**: Tailored for coding needs.
+- **Near GPT-4 Performance**: Achieves this at a compact 34B size.
+- **HumanEval Benchmark**: Surpassed GPT-4 with fine-tuning.
+- **Benchmark Efficiency**: Demonstrates strong performance even with higher parameters.
+- **Exceptional Benchmarks**: Highly regarded in the AI community.
+- **Enhanced Coding Capabilities**: Elevates coding capabilities beyond previous models.
+- **Precision in SQL**: High performance in text-to-SQL translations.
+
 ## Usage
 The app is currently utilizing my DeepInfra key. This allows for free interactions producing responses up to 100 tokens. For more extended answers, users must input their own DeepInfra API key. If you need one, you can obtain it [here](https://deepinfra.com/dash/api_keys).
 
 **Note**: [All Llama models are charged $1 per 1M tokens on DeepInfra](https://deepinfra.com/pricing)
+
 
