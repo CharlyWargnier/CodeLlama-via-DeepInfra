@@ -1,7 +1,6 @@
 # A Playground for Meta's `CodeLlama` in Streamlit! 🎈
 
 <p float="left">
-  <img src="https://images.emojiterra.com/twitter/v14.0/1024px/1f999.png" width="60">
   <img src="https://github.com/CharlyWargnier/CodeLlama-via-DeepInfra/assets/27242399/3d6116fa-dee6-4476-8626-2d20743da9c5" width="100">
   <img src="https://github.com/CharlyWargnier/CodeLlama-via-DeepInfra/assets/27242399/8c150c9b-ce9d-4994-84cf-72d19086e6f2" width="140">
   <img src="https://github.com/CharlyWargnier/CodeLlama-via-DeepInfra/assets/27242399/a690b8a6-e826-4793-a7e6-10d2dd7b9680" width="60">
