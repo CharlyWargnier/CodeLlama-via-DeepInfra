@@ -77,15 +77,28 @@ if "api_key" not in st.session_state:
     st.session_state.api_key = ""
 
 with st.sidebar:
-    max_tokens = st.slider('Max Tokens', 10, 500, 100,)
-    top_p = st.slider('Top P', 0.0, 1.0, 0.5, 0.05)
+    max_tokens = st.slider(
+        'Max Tokens', 
+        5, 1000, 100, 
+        help="Max response length. Together with your prompt, it shouldn't surpass the model's token limit (2048)"
+    )
+
+    top_p = st.slider(
+    'Top P', 
+    0.0, 1.0, 0.9, 0.01, 
+    help="Adjusts output diversity. Higher values consider more tokens; e.g., 0.8 chooses from the top 80% likely tokens."
+)
 
 if max_tokens > 100:
     user_provided_api_key = st.text_input("👇 Your DeepInfra API Key", value=st.session_state.api_key, type = 'password')
     if user_provided_api_key:
         st.session_state.api_key = user_provided_api_key
     if not st.session_state.api_key:
-        st.warning("❄️ If you want to try this app with more than `100` tokens, you must provide your own DeepInfra API key. Get yours here → https://deepinfra.com/dash/api_keys")
+        st.warning('''
+        🔑 To use this app with over 100 tokens, you'll need your own DeepInfra API key.
+        
+        Get yours here → https://deepinfra.com/dash/api_keys
+        ''')
 
 if max_tokens <= 100 or st.session_state.api_key:
     if "messages" not in st.session_state:
@@ -108,7 +121,6 @@ if max_tokens <= 100 or st.session_state.api_key:
                     message = {"role": "assistant", "content": response}
                     st.session_state.messages.append(message)
 
-# Clear chat history function and button
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
