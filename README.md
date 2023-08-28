@@ -16,7 +16,7 @@ I've created a simple 🎈[Streamlit](https://streamlit.io/) app using [DeepInfr
 </p>
 
 ## App Usage
-The app is currently utilizing my DeepInfra key. This allows for free interactions producing responses up to 100 tokens. For more extended answers, users must input their own DeepInfra API key. If you need one, you can obtain it [here](https://deepinfra.com/dash/api_keys).
+The app is currently utilizing my DeepInfra key. This allows for free interactions producing responses up to 500 tokens. For more extended answers, users must input their own DeepInfra API key. If you need one, you can obtain it [here](https://deepinfra.com/dash/api_keys).
 
 **Note**: [All Llama models are charged $1 per 1M tokens on DeepInfra](https://deepinfra.com/pricing)
 
